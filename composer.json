@@ -1,0 +1,29 @@
+{
+  "name": "thedancingcode/fathom-analytics",
+  "type": "grav-plugin",
+  "description": "A simple plugin to add the Fathom tracking snippet to your Grav site.",
+  "keywords": ["plugin"],
+  "homepage": "https://github.com/TheDancingCode/grav-plugin-fathom-analytics",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thomas Vantuycom",
+      "email": "thomasvantuycom@protonmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\FathomAnalytics\\": "classes/"
+    },
+    "classmap":  ["fathom-analytics.php"]
+  },
+  "config": {
+    "platform": {
+      "php": "7.1.3"
+    }
+  }
+}

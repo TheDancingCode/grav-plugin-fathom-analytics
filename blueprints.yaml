@@ -1,0 +1,44 @@
+name: Fathom Analytics
+slug: fathom-analytics
+type: plugin
+version: 0.1.0
+description: A simple plugin to add the Fathom tracking snippet to your Grav site.
+icon: plug
+author:
+  name: Thomas Vantuycom
+  email: thomasvantuycom@protonmail.com
+homepage: https://github.com/TheDancingCode/grav-plugin-fathom-analytics
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/TheDancingCode/grav-plugin-fathom-analytics/issues
+docs: https://github.com/TheDancingCode/grav-plugin-fathom-analytics/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    site_id:
+      type: text
+      label: PLUGIN_FATHOM_ANALYTICS.SITE_ID
+      help: PLUGIN_FATHOM_ANALYTICS.SITE_ID_HELP
+      placeholder: ABCDEF
+      validate:
+        required: true
+    custom_domain:
+      type: url
+      label: PLUGIN_FATHOM_ANALYTICS.CUSTOM_DOMAIN
+      help: PLUGIN_FATHOM_ANALYTICS.CUSTOM_DOMAIN_HELP
+      placeholder: https://cname.yourwebsite.com

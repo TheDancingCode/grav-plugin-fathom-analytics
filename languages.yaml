@@ -1,0 +1,6 @@
+en:
+  PLUGIN_FATHOM_ANALYTICS:
+    SITE_ID: Site ID
+    SITE_ID_HELP: This is the unique Tracking ID for your site
+    CUSTOM_DOMAIN: Custom domain
+    CUSTOM_DOMAIN_HELP: Do not put anything in here unless you have a custom domain
