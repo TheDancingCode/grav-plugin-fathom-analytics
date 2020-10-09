@@ -1,7 +1,5 @@
 # Fathom Analytics Plugin
 
-**This README.md file should be modified to describe the features, installation, configuration, and general usage of the plugin.**
-
 The **Fathom Analytics** Plugin is an extension for [Grav CMS](http://github.com/getgrav/grav) to add the Fathom tracking snippet to your site.
 
 ## Installation
