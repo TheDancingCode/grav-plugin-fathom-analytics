@@ -1,7 +1,7 @@
 name: Fathom Analytics
 slug: fathom-analytics
 type: plugin
-version: 0.1.0
+version: 1.0.0
 description: A simple plugin to add the Fathom tracking snippet to your Grav site.
 icon: bar-chart
 author:
