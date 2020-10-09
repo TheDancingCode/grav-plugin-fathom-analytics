@@ -3,13 +3,12 @@ slug: fathom-analytics
 type: plugin
 version: 0.1.0
 description: A simple plugin to add the Fathom tracking snippet to your Grav site.
-icon: plug
+icon: bar-chart
 author:
   name: Thomas Vantuycom
   email: thomasvantuycom@protonmail.com
 homepage: https://github.com/TheDancingCode/grav-plugin-fathom-analytics
-demo: http://demo.yoursite.com
-keywords: grav, plugin, etc
+keywords: grav, plugin, fathom, analytics
 bugs: https://github.com/TheDancingCode/grav-plugin-fathom-analytics/issues
 docs: https://github.com/TheDancingCode/grav-plugin-fathom-analytics/blob/develop/README.md
 license: MIT
