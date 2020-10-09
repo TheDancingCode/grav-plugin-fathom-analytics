@@ -1,3 +1,9 @@
 enabled: true
 site_id:
 custom_domain:
+loading_attribute: defer
+honor_dnt: false
+manual_tracking: false
+ignore_canonicals: false
+excluded_domains:
+included_domains:

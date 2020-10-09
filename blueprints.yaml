@@ -29,15 +29,73 @@ form:
         0: PLUGIN_ADMIN.DISABLED
       validate:
         type: bool
-    site_id:
-      type: text
-      label: PLUGIN_FATHOM_ANALYTICS.SITE_ID
-      help: PLUGIN_FATHOM_ANALYTICS.SITE_ID_HELP
-      placeholder: ABCDEF
-      validate:
-        required: true
-    custom_domain:
-      type: url
-      label: PLUGIN_FATHOM_ANALYTICS.CUSTOM_DOMAIN
-      help: PLUGIN_FATHOM_ANALYTICS.CUSTOM_DOMAIN_HELP
-      placeholder: https://cname.yourwebsite.com
+    general:
+      type: section
+      title: PLUGIN_FATHOM_ANALYTICS.GENERAL_SECTION
+      fields:
+        site_id:
+          type: text
+          label: PLUGIN_FATHOM_ANALYTICS.SITE_ID
+          help: PLUGIN_FATHOM_ANALYTICS.SITE_ID_HELP
+          placeholder: ABCDEF
+          validate:
+            required: true
+        custom_domain:
+          type: url
+          label: PLUGIN_FATHOM_ANALYTICS.CUSTOM_DOMAIN
+          help: PLUGIN_FATHOM_ANALYTICS.CUSTOM_DOMAIN_HELP
+          placeholder: https://cname.yourwebsite.com
+    advanced:
+      type: section
+      title: PLUGIN_FATHOM_ANALYTICS.ADVANCED_SECTION
+      text: PLUGIN_FATHOM_ANALYTICS.ADVANCED_SECTION_TEXT
+      fields:
+        loading_attribute:
+          type: select
+          label: Loading attribute
+          default: defer
+          size: small
+          options:
+            defer: defer
+            async: async
+            none: none
+        honor_dnt:
+          type: toggle
+          label: PLUGIN_FATHOM_ANALYTICS.HONOR_DNT
+          highlight: 1
+          default: 0
+          options:
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
+          validate:
+            type: bool
+        manual_tracking:
+          type: toggle
+          label: PLUGIN_FATHOM_ANALYTICS.MANUAL_TRACKING
+          highlight: 1
+          default: 0
+          options:
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
+          validate:
+            type: bool
+        ignore_canonicals:
+          type: toggle
+          label: PLUGIN_FATHOM_ANALYTICS.IGNORE_CANONICALS
+          highlight: 1
+          default: 0
+          options:
+            1: PLUGIN_ADMIN.ENABLED
+            0: PLUGIN_ADMIN.DISABLED
+          validate:
+            type: bool
+        excluded_domains:
+          type: array
+          label: PLUGIN_FATHOM_ANALYTICS.EXCLUDED_DOMAINS
+          value_only: true
+          placeholder_value: example.com
+        included_domains:
+          type: array
+          label: PLUGIN_FATHOM_ANALYTICS.INCLUDED_DOMAINS
+          value_only: true
+          placeholder_value: example.com

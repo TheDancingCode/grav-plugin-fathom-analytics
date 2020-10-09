@@ -38,6 +38,12 @@ Here is the default configuration and an explanation of available options:
 enabled: true
 site_id:
 custom_domain:
+loading_attribute: defer
+honor_dnt: false
+manual_tracking: false
+ignore_canonicals: false
+excluded_domains:
+included_domains:
 ```
 
 ### site_id
@@ -45,3 +51,21 @@ This is the unique Tracking ID for your site.
 
 ### custom_domain
 Your [custom domain](https://usefathom.com/support/custom-domains) if you use one.
+
+### loading_attribute
+How the page should load the tracking script: `defer`, `async`, or normal.
+
+### honor_dnt
+Don't track visitors with DNT turned on.
+
+### manual_tracking
+By default, Fathom tracks a page view automatically every time a visitor loads a page. Use this option to track manually.
+
+### ignore_canonicals
+Use the current page URL even if there's a canonical one.
+
+### exclude_domains
+The Fathom tracker will track things on every domain, except the ones excluded.
+
+### include_domains
+Only track stats on a specific domain.

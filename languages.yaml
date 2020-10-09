@@ -1,6 +1,15 @@
 en:
   PLUGIN_FATHOM_ANALYTICS:
+    GENERAL_SECTION: General settings
+    ADVANCED_SECTION: Advanced tracking options
+    ADVANCED_SECTION_TEXT: Visit <a href="https://usefathom.com/support/tracking-advanced">https://usefathom.com/support/tracking-advanced</a> for more information.
     SITE_ID: Site ID
     SITE_ID_HELP: This is the unique Tracking ID for your site
     CUSTOM_DOMAIN: Custom domain
     CUSTOM_DOMAIN_HELP: Do not put anything in here unless you have a custom domain
+    LOADING_ATTRIBUTE: Loading attribute
+    HONOR_DNT: Honor DNT
+    MANUAL_TRACKING:  Manual tracking
+    IGNORE_CANONICALS: Ignore canonical URLs
+    EXCLUDED_DOMAINS: Excluded domains
+    INCLUDED_DOMAINS: Included domains
