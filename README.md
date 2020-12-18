@@ -69,3 +69,7 @@ The Fathom tracker will track things on every domain, except the ones excluded.
 
 ### include_domains
 Only track stats on a specific domain.
+
+## Referall
+
+If you're not on Fathom Analytics yet but would like to try it out, consider using my referral link: [https://usefathom.com/ref/FBADDO](https://usefathom.com/ref/FBADDO). You'll get a $10 discount on your first invoice.
